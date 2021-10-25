@@ -1,0 +1,179 @@
+name: wordfinderx
+description: The app is a common wordfinder app that helps the user to generate words from a set of letters that the user provides as an input.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.27+28
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.3
+
+  equatable: ^2.0.2
+
+  flutter_bloc: ^7.0.1
+
+  http: ^0.13.3
+
+  easy_localization: ^3.0.0
+
+  shared_preferences: ^2.0.6
+
+  rxdart: ^0.27.1
+
+  firebase_core: ^1.1.1
+
+  firebase_analytics: ^8.1.0
+
+  firebase_remote_config: ^0.10.0
+
+  keyboard_actions: ^3.4.0
+
+  url_launcher: ^6.0.5
+
+  device_info: ^2.0.2
+
+  connectivity: ^3.0.6
+
+  firebase_crashlytics: ^2.0.4
+
+  flutter_sticky_header: ^0.6.0
+
+  super_tooltip: ^1.0.1
+
+  package_info: ^2.0.2
+
+  purchases_flutter: ^3.4.1
+
+  image_picker: ^0.8.2
+
+  #image_feature_detector: ^0.2.1
+
+  #edge_detection: ^1.0.5
+
+  path_provider: ^0.5.0+1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  json_serializable: ^4.1.1
+
+  build_runner: ^2.0.3
+
+  flutter_launcher_icons: ^0.9.0
+
+  flutter_native_splash: ^1.1.8+4
+
+  pedantic: ^1.11.0
+
+flutter_native_splash:
+  image: assets/images/3.0x/splash_logo.png
+  color: "56BE91"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path_ios: "assets/icons/ios_launch_logo.png"
+  image_path_android: "assets/icons/android_launch_logo.png"
+  adaptive_icon_background: "#56BE91"
+  adaptive_icon_foreground: "assets/icons/fr_adaptive_logo.png"
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/translations/
+    - assets/images/logo_app_bar.png
+    - assets/images/drawer_button.png
+    - assets/images/search_icon.png
+    - assets/images/arrow_up.png
+    - assets/images/big_arrow_up.png
+    - assets/images/big_arrow_down.png
+    - assets/images/arrow_down.png
+    - assets/images/card_expanded_icon.png
+    - assets/images/card_collapsed_icon.png
+    - assets/images/playable_word_icon.png
+    - assets/images/sort_az_icon.png
+    - assets/images/sort_za_icon.png
+    - assets/images/sort_points_icon.png
+    - assets/images/splash_logo.png
+    - assets/images/native_splash_logo.png
+    - assets/images/sort_by_desc_icon.png
+    - assets/images/
+    
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/lato/lato_black.ttf
+          weight: 900
+        - asset: assets/fonts/lato/lato_bold.ttf
+          weight: 700
+        - asset: assets/fonts/lato/lato_regular.ttf
+          weight: 400
+        - asset: assets/fonts/lato/lato_light.ttf
+          weight: 300
+        - asset: assets/fonts/lato/lato_thin.ttf
+          weight: 200
+
